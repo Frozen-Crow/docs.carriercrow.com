@@ -1,3 +1,13 @@
+:root {
+  --vp-c-purple: #381F52;
+
+  --vp-c-brand: var(--vp-c-purple);
+  --vp-c-brand-light: var(--vp-c-purple-light);
+  --vp-c-brand-lighter: var(--vp-c-purple-lighter);
+  --vp-c-brand-dark: var(--vp-c-purple-dark);
+  --vp-c-brand-darker: var(--vp-c-purple-darker);
+}
+
 body {
 	background-image: url('https://get.carriercrow.com/img/icon-bg.202f34c8.svg');
 	background-repeat: no-repeat;
@@ -5,6 +15,9 @@ body {
 }
 
 .VPNavBar {
+	.title {
+		color: transparent;
+	}
 	.content {
 		box-shadow: 40px 15px 30px #eee;
 	}

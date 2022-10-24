@@ -1,5 +1,6 @@
 export default {
-	title: ' ',
+	title: 'Carrier Crow',
+	description: 'Send successful email, fast.',
 	appearance: false,
 	themeConfig: {
 		logo: 'https://get.carriercrow.com/img/logo.c3a801ec.svg',
