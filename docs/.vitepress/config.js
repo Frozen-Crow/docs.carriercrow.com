@@ -3,6 +3,10 @@ export default {
 	appearance: false,
 	themeConfig: {
 		logo: 'https://get.carriercrow.com/img/logo.c3a801ec.svg',
+		editLink: {
+			pattern: 'https://github.com/Frozen-Crow/docs.carriercrow.com/edit/master/docs/:path',
+			text: 'Edit this page on GitHub'
+		},
 		nav: [{
 			text: 'Setup',
 			link: '/setup/'
