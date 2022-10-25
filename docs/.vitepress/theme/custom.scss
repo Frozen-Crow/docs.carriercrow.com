@@ -1,4 +1,6 @@
 :root {
+  --vp-c-info: #339AFF;
+
   --vp-c-purple: #381F52;
 
   --vp-c-brand: var(--vp-c-purple);
@@ -32,4 +34,25 @@ body {
 .pager-link {
 	background: #fff;
 	box-shadow: 5px 5px 10px #eee;
+}
+
+.icon-code {
+	font-size: 15px;
+	border-radius: 5px;
+	i {
+		width: 15px;
+		position: relative;
+		top: 2px;
+	}
+}
+
+.text-muted {
+	color: #ccc;
+}
+
+blockquote {
+	&.info {
+		color: var(--vp-c-info);
+		border-left-color: var(--vp-c-info);
+	}
 }

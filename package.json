@@ -12,5 +12,9 @@
     "sass": "^1.55.0",
     "vitepress": "^1.0.0-alpha.22",
     "vue": "^3.2.41"
+  },
+  "dependencies": {
+    "feather-icons": "4",
+    "vue-feather": "2"
   }
 }

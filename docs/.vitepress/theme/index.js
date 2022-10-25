@@ -1,4 +1,11 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.scss'
 
-export default DefaultTheme
+import VueFeather from 'vue-feather';
+
+export default {
+	...DefaultTheme,
+	enhanceApp({ app }) {
+		app.component(VueFeather.name, VueFeather);
+	}
+}

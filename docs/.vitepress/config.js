@@ -21,7 +21,16 @@ export default {
 				text: 'Setup',
 				items: [{
 					text: 'Sender Authentication',
-					link: '/setup/sender-authentication'
+					items: [{
+						text: 'Overview',
+						link: '/setup/sender-authentication/'
+					},{
+						text: 'Setup Instructions',
+						link: '/setup/sender-authentication/instructions.md'
+					},{
+						text: 'Validate DNS',
+						link: '/setup/sender-authentication/validate-dns.md'
+					}]
 				},{
 					text: 'DMARC',
 					link: '/setup/dmarc'
