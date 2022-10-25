@@ -4,6 +4,7 @@ export default {
 	appearance: false,
 	themeConfig: {
 		logo: 'https://get.carriercrow.com/img/logo.c3a801ec.svg',
+		lastUpdated: true,
 		editLink: {
 			pattern: 'https://github.com/Frozen-Crow/docs.carriercrow.com/edit/master/docs/:path',
 			text: 'Edit this page on GitHub'
