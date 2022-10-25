@@ -15,6 +15,9 @@ export default {
 		},{
 			text: 'Guides',
 			link: '/guides/'
+		},{
+			text: 'API',
+			link: 'https://app.carriercrow.com/login?next=/account/api'
 		}],
 		sidebar: {
 			'/setup/': [{
