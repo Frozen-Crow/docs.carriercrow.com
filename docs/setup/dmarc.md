@@ -77,8 +77,9 @@ DMARC Records standardize how mail originators associate and authenticate domain
 	</fieldset>
 </form>
 
-### DNS Record
 <div v-if="domain.length && handleFailures.length && reportEmails.length && failureEmails.length">
+
+### DNS Record
 
 **Type**
 
