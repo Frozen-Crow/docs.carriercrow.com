@@ -76,17 +76,15 @@ DMARC Records standardize how mail originators associate and authenticate domain
 		</div>
 	</fieldset>
 </form>
-<div>
 <div v-if="domain.length && handleFailures.length && reportEmails.length && failureEmails.length">
 
-### DNS Record
+## DNS Record
 
 **Type**
 
 ```-vue
 TXT
 ```
-
 
 **Host**
 
@@ -107,5 +105,4 @@ TXT
 Complete the form above to get your DNS Record
 :::
 
-</div>
 </div>
