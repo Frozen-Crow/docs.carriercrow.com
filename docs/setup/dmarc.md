@@ -89,12 +89,33 @@ TXT
 
 **Host**
 
+<div v-if="domain.length">
+
 ```-vue
 {{`_dmarc.${domain}`}}
 ```
 
+</div>
+<div v-else>
+
+::: warning Missing Domain
+Add your domain above to generate this value
+:::
+
+</div>
+
 **Value**
+<div v-if="handleFailures.length && reportEmails.length && failureEmails.length">
 
 ```-vue
 {{`v=DMARC1; p=${handleFailures.toLowerCase()}; rua=mailto:${reportEmails.split(',').join(',mailto:')}; ruf=mailto:${failureEmails.split(',').join(',mailto:')}; ${fo.length > 0 ? `fo=${fo.join(':')}` : ``}`}}
 ```
+
+</div>
+<div v-else>
+
+::: warning Missing Required Fields
+Make sure to add a Failed Message Policy, Reporting Email(s) and Failure Email(s) above
+:::
+
+</div>
