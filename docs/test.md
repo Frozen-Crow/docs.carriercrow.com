@@ -8,8 +8,16 @@ const toggle = ref(true);
 <button @click.prevent="toggle=!toggle">Toggle Me</button>
 
 <div v-if="toggle">
-A
+
+```-vue
+A Code block
+```
+
 </div>
 <div v-else>
-B
+
+::: warning
+A Warning
+:::
+
 </div>
