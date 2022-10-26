@@ -2,12 +2,25 @@
   --vp-c-info: #339AFF;
 
   --vp-c-purple: #381F52;
+  --vp-c-purple-light: #59446f;
+  --vp-c-purple-lighter: #7a6a8c;
+  --vp-c-purple-dark: #2f1a44;
+  --vp-c-purple-darker: #251537;
 
   --vp-c-brand: var(--vp-c-purple);
   --vp-c-brand-light: var(--vp-c-purple-light);
   --vp-c-brand-lighter: var(--vp-c-purple-lighter);
   --vp-c-brand-dark: var(--vp-c-purple-dark);
   --vp-c-brand-darker: var(--vp-c-purple-darker);
+
+  --popper-theme-background-color: var(--vp-c-purple-light);
+  --popper-theme-background-color-hover: var(--vp-c-purple);
+  --popper-theme-text-color: var(--vp-c-white);
+  --popper-theme-border-width: 0px;
+  --popper-theme-border-style: solid;
+  --popper-theme-border-radius: 6px;
+  --popper-theme-padding: 15px;
+  --popper-theme-box-shadow: 0 6px 30px -6px rgba(0, 0, 0, 0.25);
 }
 
 body {
@@ -94,7 +107,7 @@ form {
 			font-weight: bold;
 		}
 
-		input, select {
+		input[type="text"], select {
 			background: none;
 			border: solid #ccc;
 			border-width: 0px 0px 1px 0px;
