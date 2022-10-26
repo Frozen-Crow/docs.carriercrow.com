@@ -76,12 +76,10 @@ DMARC Records standardize how mail originators associate and authenticate domain
 		</div>
 	</fieldset>
 </form>
-
+<div>
 <div v-if="domain.length && handleFailures.length && reportEmails.length && failureEmails.length">
 
-
 ### DNS Record
-
 
 **Type**
 
@@ -96,13 +94,11 @@ TXT
 {{`_dmarc.${domain}`}}
 ```
 
-
 **Value**
 
 ```-vue
 {{`v=DMARC1; p=${handleFailures.toLowerCase()}; rua=mailto:${reportEmails.split(',').join(',mailto:')}; ruf=mailto:${failureEmails.split(',').join(',mailto:')}; ${fo.length > 0 ? `fo=${fo.join(':')}` : ``}`}}
 ```
-
 
 </div>
 <div v-else>
@@ -111,4 +107,5 @@ TXT
 Complete the form above to get your DNS Record
 :::
 
+</div>
 </div>
