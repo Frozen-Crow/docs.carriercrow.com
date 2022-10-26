@@ -1,3 +1,7 @@
+---
+prev: 'Overview | Sender Authentication'
+next: 'Validate DNS | Sender Authentication'
+---
 # Sender Authenticaiton Setup Instructions
 Setting up sender authentication can be started by logging into Carrier Crow, clicking the <code class="icon-code"><vue-feather type="settings"></vue-feather> Administration</code> menu in the sidebar, then clicking `Sender Authentication`.
 

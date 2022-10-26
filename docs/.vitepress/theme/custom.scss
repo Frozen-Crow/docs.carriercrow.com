@@ -47,6 +47,31 @@ body {
 	}
 }
 
+.icon-text-1 {
+	position: relative;
+	top: .1rem;
+}
+
+.icon-text-2 {
+	position: relative;
+	top: .2rem;
+}
+
+.icon-text-3 {
+	position: relative;
+	top: .3rem;
+}
+
+.icon-text-4 {
+	position: relative;
+	top: .4rem;
+}
+
+.icon-text-5 {
+	position: relative;
+	top: .5rem;
+}
+
 .text-muted {
 	color: #ccc;
 }
@@ -55,5 +80,26 @@ blockquote {
 	&.info {
 		color: var(--vp-c-info);
 		border-left-color: var(--vp-c-info);
+	}
+}
+
+form {
+	fieldset {
+		margin: 20px;
+		display: flex;
+		flex-direction: column;
+		border: none;
+
+		label {
+			font-weight: bold;
+		}
+
+		input, select {
+			background: none;
+			border: solid #ccc;
+			border-width: 0px 0px 1px 0px;
+			padding: 10px;
+			font-size: 20px;
+		}
 	}
 }

@@ -1,3 +1,6 @@
+---
+prev: 'Setup Instructions | Sender Authentication'
+---
 # Sender Authentication Validate DNS
 
 After creating a sender authentication record, you will be required to setup a few DNS entries for your sending domain. Once completed, click the validate button to ensure your DNS setup was completely correctly.

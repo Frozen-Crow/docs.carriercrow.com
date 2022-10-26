@@ -24,6 +24,7 @@ export default {
 				text: 'Setup',
 				items: [{
 					text: 'Sender Authentication',
+					collapsible: true,
 					items: [{
 						text: 'Overview',
 						link: '/setup/sender-authentication/'
