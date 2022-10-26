@@ -76,9 +76,11 @@ DMARC Records standardize how mail originators associate and authenticate domain
 		</div>
 	</fieldset>
 </form>
-<div v-if="domain.length && handleFailures.length && reportEmails.length && failureEmails.length">
+<template v-if="domain.length && handleFailures.length && reportEmails.length && failureEmails.length">
 
 ## DNS Record
+
+The following record should be added to your dns provider to configure dmarc for your domain.
 
 **Type**
 
@@ -98,11 +100,11 @@ TXT
 {{`v=DMARC1; p=${handleFailures.toLowerCase()}; rua=mailto:${reportEmails.split(',').join(',mailto:')}; ruf=mailto:${failureEmails.split(',').join(',mailto:')}; ${fo.length > 0 ? `fo=${fo.join(':')}` : ``}`}}
 ```
 
-</div>
-<div v-else>
+</template>
+<template v-else>
 
 ::: warning Missing Info
 Complete the form above to get your DNS Record
 :::
 
-</div>
+</template>
