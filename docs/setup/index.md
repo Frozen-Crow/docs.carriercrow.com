@@ -15,4 +15,4 @@ Sender authentication is required to securely send email from your desired domai
 
 DMARC tells inboxes how to handle unauthenticated email from your domain as well as where to send email reports that help combat email issues.
 
-[Get Started with DMARC](./dmarc/)
+[Get Started with DMARC](./dmarc)
