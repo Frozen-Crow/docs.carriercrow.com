@@ -1,6 +1,7 @@
 ---
 prev: 'Validate DNS | Sender Authentication'
 ---
+
 <script setup>
 	import {ref} from "vue"
 	const domain = ref('');
@@ -9,6 +10,7 @@ prev: 'Validate DNS | Sender Authentication'
 	const failureEmails = ref('');
 	const fo = ref([]);
 </script>
+
 # DMARC
 
 DMARC Records standardize how mail originators associate and authenticate domain identifiers with messages, handle message policies using those identifiers, and report about mail using those identifiers. According to RFC 7489, the DMARC mechanism for policy distribution enables the strict handling of email messages that fail authentication checks, such as SPF and/or DKIM. If neither of those authentication methods passes, DMARC tells the receiver how to handle the message, such as junk it (quarantine) or reject the message entirely.
