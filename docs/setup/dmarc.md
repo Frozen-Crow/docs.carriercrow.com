@@ -4,7 +4,7 @@ prev: 'Validate DNS | Sender Authentication'
 <script setup>
 	import {ref} from "vue"
 	const domain = ref('');
-	const reportingMode = ref('');
+	const handleFailures = ref('');
 	const reportEmails = ref('');
 	const failureEmails = ref('');
 	const fo = ref([]);
@@ -20,8 +20,8 @@ DMARC Records standardize how mail originators associate and authenticate domain
 		<input v-model="domain" placeholder="example.com" />
 	</fieldset>
 	<fieldset>
-		<label>Reporting Mode</label>
-		<select v-model="reportingMode">
+		<label>Failed Message Policy</label>
+		<select v-model="handleFailures">
 			<option disabled value="">Select an option</option>
 			<option>None</option>
 			<option>Quarantine</option>
@@ -46,7 +46,7 @@ DMARC Records standardize how mail originators associate and authenticate domain
 </form>
 
 ### DNS Record
-<div v-if="domain.length && reportingMode.length && reportEmails.length && failureEmails.length">
+<div v-if="domain.length && handleFailures.length && reportEmails.length && failureEmails.length">
 
 **Type**
 
@@ -63,7 +63,7 @@ TXT
 **Value**
 
 ```-vue
-{{`v=DMARC1; p=${reportingMode.toLowerCase()}; rua=mailto:${reportEmails.split(',').join(',mailto:')}; ruf=mailto:${failureEmails.split(',').join(',mailto:')}; ${fo.length > 0 ? `fo=${fo.join(':')}` : ``}`}}
+{{`v=DMARC1; p=${handleFailures.toLowerCase()}; rua=mailto:${reportEmails.split(',').join(',mailto:')}; ruf=mailto:${failureEmails.split(',').join(',mailto:')}; ${fo.length > 0 ? `fo=${fo.join(':')}` : ``}`}}
 ```
 </div>
 <div v-else>
