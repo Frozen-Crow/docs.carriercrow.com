@@ -82,7 +82,7 @@ DMARC Records standardize how mail originators associate and authenticate domain
 
 **Type**
 
-```
+```-vue
 TXT
 ```
 
