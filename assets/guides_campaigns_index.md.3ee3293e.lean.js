@@ -1,1 +1,0 @@
-import{_ as e,o as t,c as a}from"./app.8f6a65a1.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guides/campaigns/index.md"}'),n={name:"guides/campaigns/index.md"};function s(r,c,o,i,d,p){return t(),a("div")}const f=e(n,[["render",s]]);export{m as __pageData,f as default};
