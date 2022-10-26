@@ -19,7 +19,7 @@ DMARC Records standardize how mail originators associate and authenticate domain
 		<label>
 			Domain
 			<Popper arrow content="The domain name you send mail from. If you send emails from hello@example.com, this would be example.com" placement="right">
-				<vue-feather style="width: 15px;" class="icon-text-1" type="help-circle"></vue-feather>
+				<vue-feather style="width: 15px;" class="icon-text-2 hint" type="help-circle"></vue-feather>
 			</Popper>
 		</label> 
 		<input type="text" v-model="domain" placeholder="example.com" />
@@ -28,7 +28,7 @@ DMARC Records standardize how mail originators associate and authenticate domain
 		<label>
 			Failed Message Policy
 			<Popper arrow content="How do you want mail that fails DMARC to be treated by the recipient?" placement="right">
-				<vue-feather style="width: 15px;" class="icon-text-1" type="help-circle"></vue-feather>
+				<vue-feather style="width: 15px;" class="icon-text-2 hint" type="help-circle"></vue-feather>
 			</Popper>
 		</label>
 		<select v-model="handleFailures">
@@ -42,7 +42,7 @@ DMARC Records standardize how mail originators associate and authenticate domain
 		<label>
 			Report Email(s)
 			<Popper arrow content="Comma separated list of emails that should receive domain reports." placement="right">
-				<vue-feather style="width: 15px;" class="icon-text-1" type="help-circle"></vue-feather>
+				<vue-feather style="width: 15px;" class="icon-text-2 hint" type="help-circle"></vue-feather>
 			</Popper>
 		</label>
 		<input type="text" v-model="reportEmails" placeholder="reports@example.com" />
@@ -51,7 +51,7 @@ DMARC Records standardize how mail originators associate and authenticate domain
 		<label>
 			Failure Email(s)
 			<Popper arrow content="Comma separated list of emails that should receive failure reports." placement="right">
-				<vue-feather style="width: 15px;" class="icon-text-1" type="help-circle"></vue-feather>
+				<vue-feather style="width: 15px;" class="icon-text-2 hint" type="help-circle"></vue-feather>
 			</Popper>
 		</label>
 		<input type="text" v-model="failureEmails" placeholder="failures@example.com" />
