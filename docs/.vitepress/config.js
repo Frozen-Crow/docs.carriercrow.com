@@ -16,6 +16,9 @@ export default {
 			text: 'Guides',
 			link: '/guides/'
 		},{
+			text: 'Widgets',
+			link: '/widgets/'
+		},{
 			text: 'API',
 			link: 'https://app.carriercrow.com/login?next=/account/api'
 		}],
@@ -71,6 +74,15 @@ export default {
 					{
 						text: 'Campaigns',
 						link: '/guides/campaigns/',
+					}
+				]
+			}],
+			'/widgets': [{
+				text: 'Widgets',
+				items: [
+					{
+						text: 'List Subscribe Widget',
+						link: '/widgets/list-subscribe',
 					}
 				]
 			}],
