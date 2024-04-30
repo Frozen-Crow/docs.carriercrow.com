@@ -1,0 +1,1 @@
+import{_ as s,o as e,c as t,e as a}from"./app.4d3cd1ac.js";const _=JSON.parse('{"title":"List Subscribe Widget","description":"","frontmatter":{},"headers":[],"relativePath":"widgets/list-subscribe.md"}'),o={name:"widgets/list-subscribe.md"},i=a("",8),n=[i];function r(c,l,p,d,u,b){return e(),t("div",null,n)}const h=s(o,[["render",r]]);export{_ as __pageData,h as default};
